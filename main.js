@@ -1,24 +1,15 @@
 /**** Disponibilidad de horarios *****/
 
-
-
-const lunes = "lunes";
-const martes = "martes";
-const miercoles = "miercoles";
-const jueves = "jueves";
-const viernes = "viernes";
-
-
-const mañana = "mañana";
-const tarde = "tarde";
+const arrayDiasHabiles = ["lunes", "martes", "miercoles", "jueves", "viernes"]
+const arrayTurnos = ["mañana", "tarde"]
 
 let intentos = 0
-while(intentos <= 1) {
+while(intentos <= 3) {
     let diaDePaseo = prompt("Ingrese un dia habil: ");
     let turnoDePaseo = prompt("Ingrese mañana o tarde: ");
-    let chequeoDia = (diaDePaseo === lunes ) || (diaDePaseo === martes) || (diaDePaseo === miercoles) || (diaDePaseo === jueves) || (diaDePaseo === viernes)
+    let chequeoDia = arrayDiasHabiles.includes(diaDePaseo);
     
-    let chequeoTurno = (turnoDePaseo === mañana) || (turnoDePaseo === tarde);
+    let chequeoTurno = arrayTurnos.includes(turnoDePaseo);
     if( chequeoDia && chequeoTurno){
         alert("fecha confirmada!");
         break;
