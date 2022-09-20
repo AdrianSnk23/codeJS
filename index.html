@@ -4,12 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Complementario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Desafio</title>
 </head>
 <body>
-    <h1>Rodriguez Adrian</h1>
-    <p>Desafío Complementario. Se intenta establecer un turno de paseo aplicando un Array.</p>
-<script src="main.js"></script>
+    <form class="m-2" id="paseoRecreativo">
+        <p class="fs-2">Paseos Recreativos</p>
+        <fieldset>
+            <div class="input-group mb-3">
+                <span class="input-group-text">👤</span>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="nombreCliente" placeholder="Username">
+                  <label for="nombreCliente">Nombre del Cliente</label>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">👤</span>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="apellidoCliente" placeholder="Username">
+                  <label for="apellidoCliente">Apellido del Cliente</label>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">🐶</span>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="nombreMascota" placeholder="Username">
+                  <label for="nombreMascota">Nombre de Mascota</label>
+                </div>
+              </div> 
+
+            <select class="form-select form-select-lg" aria-label="Default select example" id="diaDePaseo">
+                <option selected>Selecciona un dia hábil</option>
+                <option value="Lunes">Lunes</option>
+                <option value="Martes">Martes</option>
+                <option value="Miercoles">Miercoles</option>
+                <option value="Jueves">Jueves</option>
+                <option value="Viernes">Viernes</option>
+            </select><br>
+            <select class="form-select form-select-lg" aria-label="Default select example" id="turnoDePaseo">
+                <option selected>Selecciona un turno</option>
+                <option value="13">13hs</option>
+                <option value="14">14hs</option>
+                <option value="15">15hs</option>
+                <option value="16">16hs</option>
+            </select>
+            <br>
+            <button type="submit" class="btn btn-success">Confirmar Turno</button>
+        </fieldset>
+    </form>
+
+    <div id="contenedor"></div>
+      
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="dom.js"></script>
     <!-- <script src="simInteractivo.js"></script> -->
 </body>
 </html>
